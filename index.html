@@ -16,6 +16,20 @@
         <h2 class="text-center mb-4">
             <i class="bi bi-satellite"></i> Satellite Imagery Incident Management
         </h2>
+        <h5>
+            <pre>Use the dropdown menu labeled "Select Sample Incident..." to choose a sample incident. This will automatically fill 
+in the form fields with the corresponding data.
+Check the populated fields in the form. You can edit any of the fields if necessary.
+Once you are satisfied with the data, click the "Generate Alert Email" button at the bottom of the form. This will 
+create an alert email based on the incident data and display it below the form.
+If you need to respond to the alert, click the "Send Response" button. A modal will appear where you can enter 
+your response.
+After entering your response, click the "Send Response" button in the modal. This will generate a final 
+confirmation email based on your response and the initial alert.
+The final confirmation email will be displayed below the response modal, summarizing the resolution of the 
+incident.
+</pre>
+        </h5>
 
         <div class="mb-4">
             <select id="sampleIncidents" class="form-select">
@@ -228,16 +242,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Status Display
-        <div id="statusDisplay" class="card mt-4 d-none">
-            <div class="card-header">
-                <h5><i class="bi bi-check-circle"></i> Updated Status</h5>
-            </div>
-            <div class="card-body">
-                <pre id="statusContent" class="bg-light p-3 rounded"></pre>
-            </div>
-        </div> -->
 
         <!-- Final Email -->
         <div id="finalEmailDisplay" class="card mt-4 d-none">

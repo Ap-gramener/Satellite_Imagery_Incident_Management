@@ -552,14 +552,6 @@ sendResponseBtn.addEventListener('click', async () => {
     sendResponseBtn.disabled = true;
 
     try {
-        // Generate updated status
-
-        // statusContent.textContent = Object.entries(resolvedData)
-        //     .map(([key, value]) => `${key}: ${value}`)
-        //     .join('\n');
-        // statusDisplay.classList.remove('d-none');
-
-        // Generate final confirmation email
         const response = await fetch("https://llmfoundry.straive.com/openai/v1/chat/completions", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
